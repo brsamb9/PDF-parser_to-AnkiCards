@@ -19,3 +19,5 @@ Used by:
 <br>
 g++ main.cpp flash_card.cpp parse_text_file.cpp 
 ./a.out *file.pdf*
+
+This will output a Anki_to_import.txt file. Then go to the Anki app to import (should automatically import correctly).
