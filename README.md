@@ -1,17 +1,20 @@
 
 # Purpose: 
-## Automate generation of anki flash cards with glossary key words and their respective definitions.
+## Automate generation of anki flash cards from a PDF's glossary section.
+<br>
+<br>
+# IMPORTANT:
+<br>
+Since every book has different rules, you need to tailor this 'ruleset' (in main.cpp) to yours.
+No guarentees this will work for your case. This was a quick project to parse the glossary of the book to import as anki cards.
+<br>
 <br>
 # Requirements:
 linux & 'pdftotext' tool in the popplers.utils package
 <br>
 Can extend in code.
 <br>
-# IMPORTANT:
-<br>
-Change the following ruleset class for your chosen pdf. No guarentees this will work for your case. This was a quick project to parse the glossary of the book to import as anki cards.
-<br>
-<br>
+
 Designed for soley text input.
 <br>
 <br>
