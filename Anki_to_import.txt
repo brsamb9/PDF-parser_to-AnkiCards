@@ -1,0 +1,539 @@
+Chapter_1:  argument 	Value passed to a function.
+Chapter_1:  assignment 	Obliterates an object’s current value and replaces that value by a new one.
+Chapter_1:  block 	Sequence of zero or more statements enclosed in curly braces.
+Chapter_1:  buffer 	A region of storage used to hold data. IO facilities often store input (or output) in a buffer and read or write the buffer independently from actions in the program. Output buffers can be explicitly flushed to force the buffer to be written. By default, reading cin flushes cout; cout is also flushed when the program ends normally.
+Chapter_1:  built-in type 	Type, such as int, defined by the language.
+Chapter_1:  cerr ostream object tied to the standard error	, which often writes to the same device as the standard output. By default, writes to cerr are not buffered. Usually used for error messages or other output that is not part of the normal logic of the program.
+Chapter_1:  character string literal 	Another term for string literal.
+Chapter_1:  cin 	istream object used to read from the standard input.
+Chapter_1:  class 	Facility for defining our own data structures together with associated operations. The class is one of the most fundamental features in C++. Library types, such as istream and ostream, are classes.
+Chapter_1:  class type 	A type defined by a class. The name of the type is the class name.
+Chapter_1:  clog ostream object tied to the standard error. 	By default, writes to clog are buffered. Usually used to report information about program execution to a log file.
+Chapter_1:  comments 	Program text that is ignored by the compiler. C++ has two kinds of comments: single-line and paired. Single-line comments start with a //. Everything from the // to the end of the line is a comment. Paired comments begin with a /* and include all text up to the next */.
+Chapter_1:  condition 	An expression that is evaluated as true or false. A value of zero is false; any other value yields true.
+Chapter_1:  cout ostream object used to write to the standard output. 	Ordinarily used to write the output of a program.
+Chapter_1:  curly brace 	Curly braces delimit blocks. An open curly ({) starts a block; a close curly (}) ends one.
+Chapter_1:  data structure 	A logical grouping of data and operations on that data.
+Chapter_1:  edit-compile-debug 	The process of getting a program to execute properly.
+Chapter_1:  end-of-file 	System-specific marker that indicates that there is no more input in a file.
+Chapter_1:  expression 	The smallest unit of computation. An expression consists of one or more operands and usually one or more operators. Expressions are evaluated to produce a result. For example, assuming i and j are ints, then i + j is an expression and yields the sum of the two int values.
+Chapter_1:  for statement 	Iteration statement that provides iterative execution. Often used to repeat a calculation a fixed number of times.
+Chapter_1:  function 	Named unit of computation.
+Chapter_1:  function body 	Block that defines the actions performed by a function.
+Chapter_1:  function name 	Name by which a function is known and can be called.
+Chapter_1:  header 	Mechanism whereby the definitions of a class or other names are made available to multiple programs. A program uses a header through a #include directive.
+Chapter_1:  if statement 	Conditional execution based on the value of a specified condition. If the condition is true, the if body is executed. If not, the else body is executed if there is one.
+Chapter_1:  initialize 	Give an object a value at the same time that it is created.
+Chapter_1:  iostream 	Header that provides the library types for stream-oriented input and output.
+Chapter_1:  istream 	Library type providing stream-oriented input.
+Chapter_1:  library type 	Type, such as istream, defined by the standard library.
+Chapter_1:  main 	Function called by the operating system to execute a C++ program. Each program must have one and only one function named main.
+Chapter_1:  manipulator 	Object, such as std::endl, that when read or written “manipulates” the stream itself.
+Chapter_1:  member function 	Operation defined by a class. Member functions ordinarily are called to operate on a specific object.
+Chapter_1:  method 	Synonym for member function.
+Chapter_1:  namespace 	Mechanism for putting names defined by a library into a single place. Namespaces help avoid inadvertent name clashes. The names defined by the C++ library are in the namespace std.
+Chapter_1:  ostream 	Library type providing stream-oriented output.
+Chapter_1:  parameter list 	Part of the definition of a function. Possibly empty list that specifies what arguments can be used to call the function.
+Chapter_1:  return type 	Type of the value returned by a function.
+Chapter_1:  source file 	Term used to describe a file that contains a C++ program.
+Chapter_1:  standard error 	Output stream used for error reporting. Ordinarily, the standard output and the standard error are tied to the window in which the program is executed.
+Chapter_1:  standard input 	Input stream usually associated with the window in which the program executes.
+Chapter_1:  standard library 	Collection of types and functions that every C++ compiler must support. The library provides the types that support IO. C++ programmers tend to talk about “the library,” meaning the entire standard library. They also tend to refer to particular parts of the library by referring to a library type, such as the “iostream library,” meaning the part of the standard library that defines the IO classes.
+Chapter_1:  standard output 	Output stream usually associated with the window in which the program executes.
+Chapter_1:  statement 	A part of a program that specifies an action to take place when the program is executed. An expression followed by a semicolon is a statement; other kinds of statements include blocks and if, for, and while statements, all of which contain other statements within themselves.
+Chapter_1:  std 	Name of the namespace used by the standard library. std::cout indicates that we’re using the name cout defined in the std namespace.
+Chapter_1:  string literal 	Sequence of zero or more characters enclosed in double quotes ("a string literal").
+Chapter_1:  uninitialized variable 	Variable that is not given an initial value. Variables of class type for which no initial value is specified are initialized as specified by the class definition. Variables of built-in type defined inside a function are uninitialized unless explicitly initialized. It is an error to try to use the value of an uninitialized variable. Uninitialized variables are a rich source of bugs .
+Chapter_1:  variable 	A named object.
+Chapter_1:  while statement 	Iteration statement that provides iterative execution so long as a specified condition is true. The body is executed zero or more times, depending on the truth value of the condition.
+Chapter_1:  () operator 	Call operator. A pair of parentheses “()” following a function name. The operator causes a function to be invoked. Arguments to the function may be passed inside the parentheses.
+Chapter_1:  ++ operator 	Increment operator. Adds 1 to the operand; ++i is equivalent to i = i + 1.
+Chapter_1:  += operator 	Compound assignment operator that adds the right-hand operand to the left and stores the result in the left-hand operand; a += b is equivalent to a = a + b.
+Chapter_1:  . operator 	Dot operator. Left-hand operand must be an object of class type and the right-hand operand must be the name of a member of that object. The operator yields the named member of the given object.
+Chapter_1:  :: operator 	Scope operator. Among other uses, the scope operator is used to access names in a namespace. For example, std::cout denotes the name cout from the namespace std.
+Chapter_1:  = operator 	Assigns the value of the right-hand operand to the object denoted by the left-hand operand.
+Chapter_1:  -- operator 	Decrement operator. Subtracts 1 from the operand; --i is equivalent to i = i - 1.
+Chapter_1:  << operator 	Output operator. Writes the right-hand operand to the output stream indicated by the left-hand operand: cout << "hi" writes hi to the standard output. Output operations can be chained together: cout << "hi" << "bye" writes hibye.
+Chapter_1:  >> operator 	Input operator. Reads from the input stream specified by the lefthand operand into the right-hand operand: cin >> i reads the next value on the standard input into i. Input operations can be chained together: cin >> i >> j reads first into i and then into j.
+Chapter_1:  # include 	Directive that makes code in a header available to a program.
+Chapter_1:  == operator 	The equality operator. Tests whether the left-hand operand is equal to the right-hand operand.
+Chapter_1:  != operator 	The inequality operator. Tests whether the left-hand operand is not equal to the right-hand operand.
+Chapter_1:  <= operator 	The less-than-or-equal operator. Tests whether the left-hand operand is less than or equal to the right-hand operand.
+Chapter_1:  < operator 	The less-than operator. Tests whether the left-hand operand is less than the right-hand operand.
+Chapter_1:  >= operator 	Greater-than-or-equal operator. Tests whether the left-hand operand is greater than or equal to the right-hand operand.
+Chapter_2:  > operator 	Greater-than operator. Tests whether the left-hand operand is greater than the right-hand operand. address Number by which a byte in memory can be found.
+Chapter_2:  alias declaration 	Defines a synonym for another type: using name = type declares name as a synonym for the type type .
+Chapter_2:  arithmetic types 	Built-in types representing boolean values, characters, integers, and floating-point numbers.
+Chapter_2:  array 	Data structure that holds a collection of unnamed objects that are accessed by an index. Section 3.5 covers arrays in detail.
+Chapter_2:  auto 	Type specifier that deduces the type of a variable from its initializer.
+Chapter_2:  base type type specifier	, possibly qualified by const, that precedes the declarators in a declaration. The base type provides the common type on which the declarators in a declaration can build.
+Chapter_2:  bind 	Associating a name with a given entity so that uses of the name are uses of the underlying entity. For example, a reference is a name that is bound to an object.
+Chapter_2:  byte 	Smallest addressable unit of memory. On most machines a byte is 8 bits.
+Chapter_2:  class member 	Part of a class.
+Chapter_2:  compound type 	A type that is defined in terms of another type.
+Chapter_2:  const 	Type qualifier used to define objects that may not be changed. const objects must be initialized, because there is no way to give them a value after they are defined.
+Chapter_2:  const pointer 	Pointer that is const.
+Chapter_2:  const reference 	Colloquial synonym for reference to const.
+Chapter_2:  constant expression 	Expression that can be evaluated at compile time.
+Chapter_2:  constexpr 	Variable that represents a constant expression. § 6.5.2 (p. 239) covers constexpr functions.
+Chapter_2:  conversion 	Process whereby a value of one type is transformed into a value of another type. The language defines conversions among the built-in types.
+Chapter_2:  data member 	Data elements that constitute an object. Every object of a given class has its own copies of the class’ data members. Data members may be initialized when declared inside the class.
+Chapter_2:  declaration 	Asserts the existence of a variable, function, or type defined elsewhere. Names may not be used until they are defined or declared.
+Chapter_2:  declarator 	The part of a declaration that includes the name being defined and an optional type modifier.
+Chapter_2:  decltype 	Type specifier that deduces the type of a variable or an expression.
+Chapter_2:  default initialization 	How objects are initialized when no explicit initializer is given. How class type objects are initialized is controlled by the class. Objects of built-in type defined at global scope are initialized to 0; those defined at local scope are uninitialized and have undefined values.
+Chapter_2:  definition 	Allocates storage for a variable of a specified type and optionally initializes the variable. Names may not be used until they are defined or declared.
+Chapter_2:  escape sequence 	Alternative mechanism for representing characters, particularly for those without printable representations. An escape sequence is a backslash followed by a character, three or fewer octal digits, or an x followed by a hexadecimal number.
+Chapter_2:  global scope 	The scope that is outside all other scopes.
+Chapter_2:  header guard 	Preprocessor variable used to prevent a header from being included more than once in a single file.
+Chapter_2:  identifier 	Sequence of characters that make up a name. Identifiers are casesensitive.
+Chapter_2:  in-class initializer 	Initializer provided as part of the declaration of a class data member. In-class initializers must follow an = symbol or be enclosed inside curly braces.
+Chapter_2:  in scope 	Name that is visible from the current scope.
+Chapter_2:  initialized 	A variable given an initial value when it is defined. Variables usually should be initialized.
+Chapter_2:  inner scope 	Scope that is nested inside another scope.
+Chapter_2:  integral types 	See arithmetic type.
+Chapter_2:  list initialization 	Form of initialization that uses curly braces to enclose one or more initializers.
+Chapter_2:  literal 	A value such as a number, a character, or a string of characters. The value cannot be changed. Literal characters are enclosed in single quotes, literal strings in double quotes.
+Chapter_2:  local scope 	Colloquial synonym for block scope.
+Chapter_2:  low-level const 	A const that is not top-level. Such consts are integral to the type and are never ignored.
+Chapter_2:  member 	Part of a class.
+Chapter_2:  nonprintable character 	A character with no visible representation, such as a control character, a backspace, newline, and so on.
+Chapter_2:  null pointer 	Pointer whose value is 0. A null pointer is valid but does not point to any object.
+Chapter_2:  nullptr 	Literal constant that denotes the null pointer.
+Chapter_2:  object 	A region of memory that has a type. A variable is an object that has a name.
+Chapter_2:  outer scope 	Scope that encloses another scope.
+Chapter_2:  pointer 	An object that can hold the address of an object, the address one past the end of an object, or zero.
+Chapter_2:  pointer to const 	Pointer that can hold the address of a const object. A pointer to const may not be used to change the value of the object to which it points.
+Chapter_2:  preprocessor 	Program that runs as part of compilation of a C++ program.
+Chapter_2:  preprocessor variable 	Variable managed by the preprocessor. The preprocessor replaces each preprocessor variable by its value before our program is compiled.
+Chapter_2:  reference 	An alias for another object.
+Chapter_2:  reference to const 	A reference that may not change the value of the object to which it refers. A reference to const may be bound to a const object, a nonconst object, or the result of an expression.
+Chapter_2:  scope 	The portion of a program in which names have meaning. C++ has several levels of scope: global—names defined outside any other scope class—names defined inside a class namespace—names defined inside a namespace block—names defined inside a block Scopes nest. Once a name is declared, it is accessible until the end of the scope in which it was declared.
+Chapter_2:  separate compilation 	Ability to split a program into multiple separate source files.
+Chapter_2:  signed 	Integer type that holds negative or positive values, including zero.
+Chapter_2:  string 	Library type representing variable-length sequences of characters.
+Chapter_2:  struct 	Keyword used to define a class.
+Chapter_2:  temporary 	Unnamed object created by the compiler while evaluating an expression. A temporary exists until the end of the largest expression that encloses the expression for which it was created.
+Chapter_2:  top-level const 	The const that specifies that an object may not be changed.
+Chapter_2:  type alias 	A name that is a synonym for another type. Defined through either a typedef or an alias declaration.
+Chapter_2:  type checking 	Term used to describe the process by which the compiler verifies that the way objects of a given type are used is consistent with the definition of that type.
+Chapter_2:  type specifier 	The name of a type.
+Chapter_2:  typedef 	Defines an alias for another type. When typedef appears in the base type of a declaration, the names defined in the declaration are type names.
+Chapter_2:  undefined 	Usage for which the language does not specify a meaning. Knowingly or unknowingly relying on undefined behavior is a great source of hard-to-track runtime errors, security problems, and portability problems.
+Chapter_2:  uninitialized 	Variable defined without an initial value. In general, trying to access the value of an uninitialized variable results in undefined behavior.
+Chapter_2:  unsigned 	Integer type that holds only values greater than or equal to zero.
+Chapter_2:  variable 	A named object or reference. In C++, variables must be declared before they are used.
+Chapter_2:  void* 	Pointer type that can point to any nonconst type. Such pointers may not be dereferenced.
+Chapter_2:  void type 	Special-purpose type that has no operations and no value. It is not possible to define a variable of type void.
+Chapter_2:  word 	The natural unit of integer computation on a given machine. Usually a word is large enough to hold an address. On a 32-bit machine a word is typically 4 bytes.
+Chapter_2:  & operator 	Address-of operator. Yields the address of the object to which it is applied.
+Chapter_2:  * operator 	Dereference operator. Dereferencing a pointer returns the object to which the pointer points. Assigning to the result of a dereference assigns a new value to the underlying object.
+Chapter_2:  # define 	Preprocessor directive that defines a preprocessor variable.
+Chapter_2:  # endif 	Preprocessor directive that ends an #ifdef or #ifndef region.
+Chapter_2:  # ifdef 	Preprocessor directive that determines whether a given variable is defined.
+Chapter_3:  # ifndef 	Preprocessor directive that determines whether a given variable is not defined. begin Member of string and vector that returns an iterator to the first element. Also, free-standing library function that takes an array and returns a pointer to the first element in the array.
+Chapter_3:  buffer overflow 	Serious programming bug that results when we use an index that is out-of-range for a container, such as a string, vector, or an array. C-style strings Null-terminated character array. String literals are C-style strings. C-style strings are inherently error-prone.
+Chapter_3:  class template 	A blueprint from which specific clas types can be created. To use a class template, we must specify additional information. For example, to define a vector, we specify the element type: vector<int> holds ints.
+Chapter_3:  compiler extension 	Feature that is added to the language by a particular compiler. Programs that rely on compiler extensions cannot be moved easily to other compilers.
+Chapter_3:  container 	A type whose objects hold a collection of objects of a given type.
+Chapter_3:  vector 	is a container type.
+Chapter_3:  copy initialization 	Form of initialization that uses an =. The newly created object is a copy of the given initializer.
+Chapter_3:  difference_type 	A signed integral type defined by vector and string that can hold the distance between any two iterators.
+Chapter_3:  direct initialization 	Form of initialization that does not include an =.
+Chapter_3:  empty 	Member of string and vector. Returns bool, which is true if size is zero, false otherwise.
+Chapter_3:  end 	Member of string and vector that returns an off-the-end iterator. Also, freestanding library function that takes an array and returns a pointer one past the last element in the array.
+Chapter_3:  getline 	Function defined in the string header that takes an istream and a string. The function reads the stream up to the next newline, storing what it read into the string, and returns the istream. The newline is read and discarded.
+Chapter_3:  index 	Value used in the subscript operator to denote the element to retrieve from a string, vector, or array.
+Chapter_3:  instantiation 	Compiler process that generates a specific template class or function.
+Chapter_3:  iterator 	A type used to access and navigate among the elements of a container.
+Chapter_3:  iterator arithmetic 	Operations on vector or string iterators: Adding or subtracting an integral value and an iterator yields an iterator that many elements ahead of or behind the original iterator. Subtracting one iterator from another yields the distance between them. Iterators must refer to elements in, or off-theend of the same container.
+Chapter_3:  null-terminated string 	String whose last character is followed by the null character ('\0').
+Chapter_3:  off-the-end iterator 	The iterator returned by end that refers to a nonexistent element one past the end of a container.
+Chapter_3:  pointer arithmetic 	The arithmetic operations that can be applied to pointers. Pointers to arrays support the same operations as iterator arithmetic.
+Chapter_3:  ptrdiff_t 	Machine-dependent signed integral type defined in the cstddef header that is large enough to hold the difference between two pointers into the largest possible array.
+Chapter_3:  push_back 	Member of vector. Appends elements to the back of a vector.
+Chapter_3:  range for 	Control statement that iterates through a specified collection of values.
+Chapter_3:  size 	Member of string and vector. Returns the number of characters or elements, respectively. Returns a value of the size_type for the type.
+Chapter_3:  size_t 	Machine-dependent unsigned integral type defined in the cstddef header that is large enough to hold the size of the largest possible array.
+Chapter_3:  size_type 	Name of types defined by the string and vector classes that are capable of containing the size of any string or vector, respectively. Library classes that define size_type define it as an unsigned type.
+Chapter_3:  string 	Library type that represents a sequence of characters.
+Chapter_3:  using declarations 	Make a name from a namespace accessible directly.
+Chapter_3:  using 	namespace::name; makes name accessible without the namespace :: prefix.
+Chapter_3:  value initialization 	Initialization in which built-in types are initialized to zero and class types are initialized by the class’s default constructor. Objects of a class type can be value initialized only if the class has a default constructor. Used to initialize a container’s elements when a size, but not an element initializer, is specified. Elements are initialized as a copy of this compiler-generated value.
+Chapter_3:  vector 	Library type that holds a collection of elements of a specified type.
+Chapter_3:  ++ operator 	The iterator types and pointers define the increment operator to “add one” by moving the iterator to refer to the next element.
+Chapter_3:  [ ] operator 	Subscript operator. obj[i] yields the element at position i from the container object obj. Indices count from zero—the first element is element 0 and the last is the element indexed by obj.size() - 1. Subscript returns an object. If p is a pointer and n an integer, p[n] is a synonym for *(p+n).
+Chapter_3:  -> operator 	Arrow operator. Combines the operations of dereference and dot operators: a->b is a synonym for (*a).b.
+Chapter_3:  << operator 	The string library type defines an output operator. The string operator prints the characters in a string.
+Chapter_3:  >> operator 	The string library type defines an input operator. The string operator reads whitespace-delimited chunks of characters, storing what is read into the right-hand (string) operand.
+Chapter_3:  ! operator 	Logical NOT operator. Returns the inverse of the bool value of its operand. Result is true if operand is false and vice versa.
+Chapter_3:  && operator 	Logical AND operator. Result is true if both operands are true. The right-hand operand is evaluated only if the left-hand operand is true.
+Chapter_4:  || operator 	Logical OR operator. Yields true if either operand is true. The righthand operand is evaluated only if the left-hand operand is false. arithmetic conversion A conversion from one arithmetic type to another. In the context of the binary arithmetic operators, arithmetic conversions usually attempt to preserve precision by converting a smaller type to a larger type (e.g., integral types are converted to floating point).
+Chapter_4:  associativity 	Determines how operators with the same precedence are grouped. Operators can be either right associative (operators are grouped from right to left) or left associative (operators are grouped from left to right).
+Chapter_4:  binary operators 	Operators that take two operands.
+Chapter_4:  cast 	An explicit conversion.
+Chapter_4:  compound expression 	An expression involving more than one operator.
+Chapter_4:  const_cast 	A cast that converts a low-level const object to the corresponding nonconst type or vice versa.
+Chapter_4:  conversion 	Process whereby a value of one type is transformed into a value of another type. The language defines conversions among the built-in types. Conversions to and from class types are also possible.
+Chapter_4:  dynamic_cast 	Used in combination with inheritance and run-time type identification. See § 19.2 (p. 825).
+Chapter_4:  expression 	The lowest level of computation in a C++ program. Expressions generally apply an operator to one or more operands. Each expression yields a result. Expressions can be used as operands, so we can write compound expressions requiring the evaluation of multiple operators.
+Chapter_4:  implicit conversion 	A conversion that is automatically generated by the compiler. Given an expression that needs a particular type but has an operand of a differing type, the compiler will automatically convert the operand to the desired type if an appropriate conversion exists.
+Chapter_4:  integral promotions conversions that take a smaller integral type to its most closely related larger integral type. 	Operands of small integral types (e.g., short, char, etc.) are always promoted, even in contexts where such conversions might not seem to be required.
+Chapter_4:  lvalue 	An expression that yields an object or function. A nonconst lvalue that denotes an object may be the left-hand operand of assignment.
+Chapter_4:  operands 	Values on which an expression operates. Each operator has one or more operands associated with it.
+Chapter_4:  operator 	Symbol that determines what action an expression performs. The language defines a set of operators and what those operators mean when applied to values of built-in type. The language also defines the precedence and associativity of each operator and specifies how many operands each operator takes. Operators may be overloaded and applied to values of class type.
+Chapter_4:  order of evaluation 	Order, if any, in which the operands to an operator are evaluated. In most cases, the compiler is free to evaluate operands in any order. However, the operands are always evaluated before the operator itself is evaluated. Only the &&, ||, ?:, and comma operators specify the order in which their operands are evaluated.
+Chapter_4:  overloaded operator 	Version of an operator that is defined for use with a class type. We’ll see in Chapter 14 how to define overloaded versions of operators.
+Chapter_4:  precedence 	Defines the order in which different operators in a compound expression are grouped. Operators with higher precedence are grouped more tightly than operators with lower precedence.
+Chapter_4:  promoted 	See integral promotions.
+Chapter_4:  reinterpret_cast 	Interprets the contents of the operand as a different type. Inherently machine dependent and dangerous.
+Chapter_4:  result 	Value or object obtained by evaluating an expression.
+Chapter_4:  rvalue 	Expression that yields a value but not the associated location, if any, of that value.
+Chapter_4:  short-circuit evaluation 	Term used to describe how the logical AND and logical OR operators execute. If the first operand to these operators is sufficient to determine the overall result, evaluation stops. We are guaranteed that the second operand is not evaluated.
+Chapter_4:  sizeof 	Operator that returns the size, in bytes, to store an object of a given type name or of the type of a given expression.
+Chapter_4:  static_cast 	An explicit request for a well-defined type conversion. Often used to override an implicit conversion that the compiler would otherwise perform.
+Chapter_4:  unary operators 	Operators that take a single operand.
+Chapter_4:  	, operator Comma operator. Binary operator that is evaluated left to right. The result of a comma expression is the value of the right-hand operand. The result is an lvalue if and only if that operand is an lvalue.
+Chapter_4:  ?: operator 	Conditional operator. Provides an if-then-else expression of the form cond ?  expr1 :  expr2; If the condition cond is true, then expr1 is evaluated. Otherwise, expr2 is evaluated. The type expr1 and expr2 must be the same type or be convertible to a common type. Only one of expr1 or expr2 is evaluated.
+Chapter_4:  && operator 	Logical AND operator. Result is true if both operands are true. The right-hand operand is evaluated only if the left-hand operand is true.
+Chapter_4:  & operator 	Bitwise AND operator. Generates a new integral value in which each bit position is 1 if both operands have a 1 in that position; otherwise the bit is 0.
+Chapter_4:  ^ operator 	Bitwise exclusive or operator. Generates a new integral value in which each bit position is 1 if either but not both operands contain a 1 in that bit position; otherwise, the bit is 0.
+Chapter_4:  || operator 	Logical OR operator. Yields true if either operand is true. The righthand operand is evaluated only if the left-hand operand is false.
+Chapter_4:  | operator 	Bitwise OR operator. Generates a new integral value in which each bit position is 1 if either operand has a 1 in that position; otherwise the bit is 0.
+Chapter_4:  ++ operator 	The increment operator. The increment operator has two forms, prefix and postfix. Prefix increment yields an lvalue. It adds 1 to the operand and returns the changed value of the operand. Postfix increment yields an rvalue. It adds 1 to the operand and returns a copy of the original, unchanged value of the operand. Note: Iterators have ++ even if they do not have the + operator.
+Chapter_4:  -- operator 	The decrement operator has two forms, prefix and postfix. Prefix decrement yields an lvalue. It subtracts 1 from the operand and returns the changed value of the operand. Postfix decrement yields an rvalue. It subtracts 1 from the operand and returns a copy of the original, unchanged value of the operand. Note: Iterators have -- even if they do not have the -.
+Chapter_4:  << operator 	The left-shift operator. Shifts bits in a (possibly promoted) copy of the value of the left-hand operand to the left. Shifts as many bits as indicated by the right-hand operand. The right-hand operand must be zero or positive and strictly less than the number of bits in the result. Left-hand operand should be unsigned; if the left-hand operand is signed, it is undefined if a shift causes a different bit to shift into the sign bit.
+Chapter_4:  >> operator 	The right-shift operator. Like the left-shift operator except that bits are shifted to the right. If the left-hand operand is signed, it is implementation defined whether bits shifted into the result are 0 or a copy of the sign bit.
+Chapter_4:  ~ operator 	Bitwise NOT operator. Generates a new integral value in which each bit is an inverted copy of the corresponding bit in the (possibly promoted) operand.
+Chapter_5:  ! operator 	Logical NOT operator. Returns the inverse of the bool value of its operand. Result is true if operand is false and vice versa. block Sequence of zero or more statements enclosed in curly braces. A block is a statement, so it can appear anywhere a statement is expected.
+Chapter_5:  break statement 	Terminates the nearest enclosing loop or switch statement. Execution transfers to the first statement following the terminated loop or switch.
+Chapter_5:  case label 	Constant expression (§ 2.4.4, p. 65) that follows the keyword case in a switch statement. No two case labels in the same switch statement may have the same value.
+Chapter_5:  catch clause 	The catch keyword, an exception declaration in parentheses, and a block of statements. The code inside a catch clause does whatever is necessary to handle an exception of the type defined in its exception declaration.
+Chapter_5:  compound statement 	Synonym for block.
+Chapter_5:  continue statement 	Terminates the current iteration of the nearest enclosing loop. Execution transfers to the loop condition in a while or do, to the next iteration in a range for, or to the expression in the header of a traditional for loop.
+Chapter_5:  dangling else 	Colloquial term used to refer to the problem of how to process nested if statements in which there are more ifs than elses. In C++, an else is always paired with the closest preceding unmatched if. Note that curly braces can be used to effectively hide an inner if so that the programmer can control which if a given else should match.
+Chapter_5:  default 	label case label that matches any otherwise unmatched value computed in the switch expression.
+Chapter_5:  do while statement 	Like a while, except that the condition is tested at the end of the loop, not the beginning. The statement inside the do is executed at least once.
+Chapter_5:  exception classes 	Set of classes defined by the standard library to be used to represent errors. Table 5.1 (p. 197) lists the general-purpose exception classes.
+Chapter_5:  exception declaration 	The declaration in a catch clause. This declaration specifies the type of exceptions the catch can handle.
+Chapter_5:  exception handler 	Code that deals with an exception raised in another part of the program. Synonym for catch clause.
+Chapter_5:  exception safe 	Term used to describe programs that behave correctly when exceptions are thrown.
+Chapter_5:  expression statement 	An expression followed by a semicolon. An expression statement causes the expression to be evaluated.
+Chapter_5:  flow of control 	Execution path through a program.
+Chapter_5:  for statement 	Iteration statement that provides iterative execution. Ordinarily used to step through a container or to repeat a calculation a given number of times.
+Chapter_5:  goto statement 	Statement that causes an unconditional transfer of control to a specified labeled statement elsewhere in the same function. gotos obfuscate the flow of control within a program and should be avoided.
+Chapter_5:  if else statement 	Conditional execution of code following the if or the else, depending on the truth value of the condition.
+Chapter_5:  if statement 	Conditional execution based on the value of the specified condition. If the condition is true, then the if body is executed. If not, control flows to the statement following the if.
+Chapter_5:  labeled statement 	Statement preceded by a label. A label is an identifier followed by a colon. Label identifiers are independent of other uses of the same identifier.
+Chapter_5:  null statement 	An empty statement. Indicated by a single semicolon.
+Chapter_5:  raise 	Often used as a synonym for throw. C++ programmers speak of “throwing” or “raising” an exception interchangeably.
+Chapter_5:  range for statement 	Statement that iterates through a sequence.
+Chapter_5:  switch statement 	A conditional statement that starts by evaluating the expression that follows the switch keyword. Control passes to the labeled statement with a case label that matches the value of the expression. If there is no matching label, execution either continues at the default label, if there is one, or falls out of the switch if there is no default label.
+Chapter_5:  terminate 	Library function that is called if an exception is not caught.
+Chapter_5:  terminate 	aborts the program.
+Chapter_5:  throw expression 	Expression that interrupts the current execution path. Each throw throws an object and transfers control to the nearest enclosing catch clause that can handle the type of exception that is thrown.
+Chapter_5:  try block 	Block enclosed by the keyword try and one or more catch clauses. If the code inside a try block raises an exception and one of the catch clauses matches the type of the exception, then the exception is handled by that catch. Otherwise, the exception is handled by an enclosing try block or the program terminates.
+Chapter_6:  while statement 	Iteration statement that executes its target statement as long as a specified condition is true. The statement is executed zero or more times, depending on the truth value of the condition. ambiguous call Compile-time error that results during function matching when two or more functions provide an equally good match for a call.
+Chapter_6:  arguments 	Values supplied in a function call that are used to initialize the function’s parameters.
+Chapter_6:  assert 	Preprocessor macro that takes a single expression, which it uses as a condition. When the preprocessor variable NDEBUG is not defined, assert evaluates the condition and, if the condition is false, writes a message and terminates the program.
+Chapter_6:  automatic objects 	Objects that exist only during the execution of a function. They are created when control passes through their definition and are destroyed at the end of the block in which they are defined.
+Chapter_6:  best match 	Function selected from a set of overloaded functions for a call. If a best match exists, the selected function is a better match than all the other viable candidates for at least one argument in the call and is no worse on the rest of the arguments.
+Chapter_6:  call by reference 	See pass by reference.
+Chapter_6:  call by value 	See pass by value.
+Chapter_6:  candidate functions 	Set of functions that are considered when resolving a function call. The candidate functions are all the functions with the name used in the call for which a declaration is in scope at the time of the call.
+Chapter_6:  constexpr 	Function that may return a constant expression. A constexpr function is implicitly inline.
+Chapter_6:  default argument 	Value specified to be used when an argument is omitted in a call to the function.
+Chapter_6:  executable file 	File, which the operating system executes, that contains code corresponding to our program.
+Chapter_6:  function 	Callable unit of computation.
+Chapter_6:  function body 	Block that defines the actions of a function.
+Chapter_6:  function matching 	Compiler process by which a call to an overloaded function is resolved. Arguments used in the call are compared to the parameter list of each overloaded function.
+Chapter_6:  function prototype 	Function declaration, consisting of the name, return type, and parameter types of a function. To call a function, its prototype must have been declared before the point of call.
+Chapter_6:  hidden names 	Names declared inside a scope hide previously declared entities with the same names declared outside that scope.
+Chapter_6:  initializer_list 	Library class that represents a comma-separated list of objects of a single type enclosed inside curly braces.
+Chapter_6:  inline function 	Request to the compiler to expand a function at the point of call, if possible. Inline functions avoid the normal function-calling overhead.
+Chapter_6:  link 	Compilation step in which multiple object files are put together to form an executable program.
+Chapter_6:  local static objects 	Local objects whose value persists across calls to the function. Local static objects that are created and initialized before control reaches their use and are destroyed when the program ends.
+Chapter_6:  local variables 	Variables defined inside a block.
+Chapter_6:  no match 	Compile-time error that results during function matching when there is no function with parameters that match the arguments in a given call.
+Chapter_6:  object code 	Format into which the compiler transforms our source code.
+Chapter_6:  object file 	File holding object code generated by the compiler from a given source file. An executable file is generated from one or more object files after the files are linked together.
+Chapter_6:  object lifetime 	Every object has an associated lifetime. Nonstatic objects that are defined inside a block exist from when their definition is encountered until the end of the block in which they are defined. Global objects are created during program startup. Local static objects are created before the first time execution passes through the object’s definition. Global objects and local static objects are destroyed when the main function ends.
+Chapter_6:  overload resolution 	See function matching.
+Chapter_6:  overloaded function 	Function that has the same name as at least one other function. Overloaded functions must differ in the number or type of their parameters.
+Chapter_6:  parameters 	Local variables declared inside the function parameter list. Parameters are initialized by the arguments provided in each function call.
+Chapter_6:  pass by reference 	Description of how arguments are passed to parameters of reference type. Reference parameters work the same way as any other use of references; the parameter is bound to its corresponding argument.
+Chapter_6:  pass by value 	How arguments are passed to parameters of a nonreference type. A nonreference parameter is a copy of the value of its corresponding argument.
+Chapter_6:  preprocessor macro 	Preprocessor facility that behaves like an inline function. Aside from assert, modern C++ programs make very little use of preprocessor macros.
+Chapter_6:  recursion loop 	Description of a recursive function that omits a stopping condition and which calls itself until exhasuting the program stack.
+Chapter_6:  recursive function 	Function that calls itself directly or indirectly.
+Chapter_6:  return type 	Part of a function declaration that specifies the type of the value that the function returns.
+Chapter_6:  separate compilation 	Ability to split a program into multiple separate source files.
+Chapter_6:  trailing return type 	Return type specified after the parameter list.
+Chapter_6:  viable functions 	Subset of the candidate functions that could match a given call. Viable functions have the same number of parameters as arguments to the call, and each argument type can be converted to the corresponding parameter type.
+Chapter_7:  () operator 	Call operator. Executes a function. The name of a function or a function pointer precedes the parentheses, which enclose a (possibly empty) comma-separated list of arguments. abstract data type Data structure that encapsulates (hides) its implementation.
+Chapter_7:  access specifier 	Keywords public and private. Used to define whether members are accessible to users of the class or only to friends and members of the class. Specifiers may appear multiple times within a class. Each specifier sets the access of the following members up to the next specifier.
+Chapter_7:  aggregate class 	Class with only public data members that has no in-class initializers or constructors. Members of an aggregate can be initialized by a braceenclosed list of initializers.
+Chapter_7:  class 	C++ mechanism for defining our own abstract data types. Classes may have data, function, or type members. A class defines a new type and a new scope.
+Chapter_7:  class declaration 	The keyword class (or struct) followed by the class name followed by a semicolon. If a class is declared but not defined, it is an incomplete type.
+Chapter_7:  class keyword 	Keyword used to define a class; by default members are private.
+Chapter_7:  class scope 	Each class defines a scope. Class scopes are more complicated than other scopes—member functions defined within the class body may use names that appear even after the definition.
+Chapter_7:  const member function 	A member function that may not change an object’s ordinary (i.e., neither static nor mutable) data members. The this pointer in a const member is a pointer to const. A member function may be overloaded based on whether the function is const.
+Chapter_7:  constructor 	A special member function used to initialize objects. Each constructor should give each data member a well-defined initial value.
+Chapter_7:  constructor initializer list 	Specifies initial values of the data members of a class. The members are initialized to the values specified in the initializer list before the body of the constructor executes. Class members that are not initialized in the initializer list are default initialized.
+Chapter_7:  converting constructor 	A nonexplicit constructor that can be called with a single argument. Such constructors implicitly convert from the argument’s type to the class type.
+Chapter_7:  data abstraction 	Programming technique that focuses on the interface to a type. Data abstraction lets programmers ignore the details of how a type is represented and think instead about the operations that the type can perform. Data abstraction is fundamental to both object-oriented and generic programming.
+Chapter_7:  default constructor 	Constructor that is used if no initializer is supplied.
+Chapter_7:  delegating constructor 	Constructor with a constructor-initializer list that has one entry that designates another constructor of the same class to do the initialization.
+Chapter_7:  encapsulation 	Separation of implementation from interface; encapsulation hides the implementation details of a type. In C++, encapsulation is enforced by putting the implementation in the private part of a class.
+Chapter_7:  explicit constructor 	Constructor that can be called with a single argument but cannot be used in an implicit conversion. A constructor is made explicit by prepending the keyword explicit to its declaration.
+Chapter_7:  forward declaration 	Declaration of an as yet undefined name. Most often used to refer to the declaration of a class that appears prior to the definition of that class. See incomplete type.
+Chapter_7:  friend 	Mechanism by which a class grants access to its nonpublic members. Friends have the same access rights as members. Both classes and functions may be named as friends.
+Chapter_7:  implementation 	The (usually private) members of a class that define the data and any operations that are not intended for use by code that uses the type.
+Chapter_7:  incomplete type 	Type that is declared but not defined. It is not possible to use an incomplete type to define a variable or class member. It is legal to define references or pointers to incomplete types.
+Chapter_7:  interface 	The (public) operations supported by a type. Ordinarily, the interface does not include data members.
+Chapter_7:  member function 	Class member that is a function. Ordinary member functions are bound to an object of the class type through the implicit this pointer.
+Chapter_7:  static member functions are not bound to an object and have no this pointer. 	Member functions may be overloaded; when they are, the implicit this pointer participates in the function matching.
+Chapter_7:  mutable data member 	Data member that is never const, even when it is a member of a const object. A mutable member can be changed inside a const function.
+Chapter_7:  name lookup 	Process by which the use of a name is matched to its declaration.
+Chapter_7:  private members 	Members defined after a private access specifier; accessible only to the friends and other class members. Data members and utility functions used by the class that are not part of the type’s interface are usually declared private.
+Chapter_7:  public members 	Members defined after a public access specifier; accessible to any user of the class. Ordinarily, only the functions that define the interface to the class should be defined in the public sections.
+Chapter_7:  struct keyword 	Keyword used to define a class; by default members are public.
+Chapter_7:  synthesized default constructor 	The default constructor created (synthesized) by the compiler for classes that do not explicitly define any constructors. This constructor initializes the data members from their in-class initializers, if present; otherwise it default initializes the data members.
+Chapter_7:  this pointer 	Implicit value passed as an extra argument to every nonstatic member function. The this pointer points to the object on which the function is invoked.
+Chapter_8:  = default 	Syntax used after the parameter list of the declaration of the default constructor inside a class to signal to the compiler that it should generate the constructor, even if the class has other constructors. condition state Flags and associated functions usable by any of the stream classes that indicate whether a given stream is usable.
+Chapter_8:  file mode 	Flags defined by the fstream classes that are specified when opening a file and control how a file can be used.
+Chapter_8:  file stream 	Stream object that reads or writes a named file. In addition to the normal iostream operations, file streams also define open and close members. The open member takes a string or a C-style character string that names the file to open and an optional open mode argument. The close member closes the file to which the stream is attached. It must be called before another file can be opened.
+Chapter_8:  fstream 	File stream that reads and writes to the same file. By default fstreams are opened with in and out mode set.
+Chapter_8:  ifstream 	File stream that reads an input file. By default ifstreams are opened with in mode set.
+Chapter_8:  inheritance 	Programming feature that lets a type inherit the interface of another type. The ifstream and istringstream classes inherit from istream and the ofstream and ostringstream classes inherit from ostream. Chapter 15 covers inheritance.
+Chapter_8:  istringstream 	String stream that reads a given string.
+Chapter_8:  ofstream 	File stream that writes to an output file. By default, ofstreams are opened with out mode set.
+Chapter_8:  ostringstream 	String stream that writes to a given string.
+Chapter_8:  string stream 	Stream object that reads or writes a string. In addition to the normal iostream operations, string streams define an overloaded member named str. Calling str with no arguments returns the string to which the string stream is attached. Calling it with a string attaches the string stream to a copy of that string.
+Chapter_9:  stringstream 	String stream that reads and writes to a given string. adaptor Library type, function, or iterator that, given a type, function, or iterator, makes it act like another. There are three sequential container adaptors: stack, queue, and priority_queue. Each adaptor defines a new interface on top of an underlying sequential container type.
+Chapter_9:  array 	Fixed-size sequential container. To define an array, we must give the size in addition to specifying the element type. Elements in an array can be accessed by their positional index. Supports fast random access to elements.
+Chapter_9:  begin 	Container operation that returns an iterator referring to the first element in the container, if there is one, or the off-the-end iterator if the container is empty. Whether the returned iterator is const depends on the type of the container.
+Chapter_9:  cbegin 	Container operation that returns a const_iterator referring to the first element in the container, if there is one, or the off-the-end iterator if the container is empty.
+Chapter_9:  cend 	Container operation that returns a const_iterator referring to the (nonexistent) element one past the end of the container.
+Chapter_9:  container 	Type that holds a collection of objects of a given type. Each library container type is a template type. To define a container, we must specify the type of the elements stored in the container. With the exception of array, the library containers are variable-size.
+Chapter_9:  deque 	Sequential container. Elements in a deque can be accessed by their positional index. Supports fast random access to elements. Like a vector in all respects except that it supports fast insertion and deletion at the front of the container as well as at the back and does not relocate elements as a result of insertions or deletions at either end.
+Chapter_9:  end 	Container operation that returns an iterator referring to the (nonexistent) element one past the end of the container. Whether the returned iterator is const depends on the type of the container.
+Chapter_9:  forward_list 	Sequential container that represents a singly linked list. Elements in a forward_list may be accessed only sequentially; starting from a given element, we can get to another element only by traversing each element between them. Iterators on forward_list do not support decrement (--). Supports fast insertion (or deletion) anywhere in the forward_list. Unlike other containers, insertions and deletions occur after a given iterator position. As a consequence, forward_list has a “before-the-beginning” iterator to go along with the usual off-the-end iterator. Iterators remain valid when new elements are added. When an element is removed, only the iterators to that element are invalidated.
+Chapter_9:  iterator range 	Range of elements denoted by a pair of iterators. The first iterator denotes the first element in the sequence, and the second iterator denotes one past the last element. If the range is empty, then the iterators are equal (and vice versa—if the iterators are unequal, they denote a nonempty range). If the range is not empty, then it must be possible to reach the second iterator by repeatedly incrementing the first iterator. By incrementing the iterator, each element in the sequence can be processed.
+Chapter_9:  left-inclusive interval 	A range of values that includes its first element but not its last. Typically denoted as [i, j), meaning the sequence starting at and including i up to but excluding j.
+Chapter_9:  list 	Sequential container representing a doubly linked list. Elements in a list may be accessed only sequentially; starting from a given element, we can get to another element only by traversing each element between them. Iterators on list support both increment (++) and decrement (--). Supports fast insertion (or deletion) anywhere in the list. Iterators remain valid when new elements are added. When an element is removed, only the iterators to that element are invalidated.
+Chapter_9:  off-the-beginning iterator 	Iterator denoting the (nonexistent) element just before the beginning of a forward_list. Returned from the forward_list member before_begin. Like the end() iterator, it may not be dereferenced.
+Chapter_9:  off-the-end iterator 	Iterator that denotes one past the last element in the range. Commonly referred to as the “end iterator”.
+Chapter_9:  priority_queue 	Adaptor for the sequential containers that yields a queue in which elements are inserted, not at the end but according to a specified priority level. By default, priority is determined by using the less-than operator for the element type.
+Chapter_9:  queue 	Adaptor for the sequential containers that yields a type that lets us add elements to the back and remove elements from the front.
+Chapter_9:  sequential container 	Type that holds an ordered collection of objects of a single type. Elements in a sequential container are accessed by position.
+Chapter_9:  stack 	Adaptor for the sequential containers that yields a type that lets us add and remove elements from one end only.
+Chapter_10:  vector 	Sequential container. Elements in a vector can be accessed by their positional index. Supports fast random access to elements. We can efficiently add or remove vector elements only at the back. Adding elements to a vector might cause it to be reallocated, invalidating all iterators into the vector. Adding (or removing) an element in the middle of a vector invalidates all iterators to elements after the insertion (or deletion) point. back_inserter Iterator adaptor that takes a reference to a container and generates an insert iterator that uses push_back to add elements to the specified container.
+Chapter_10:  bidirectional iterator 	Same operations as forward iterators plus the ability to use --to move backward through the sequence.
+Chapter_10:  binary predicate 	Predicate that has two parameters.
+Chapter_10:  bind 	Library function that binds one or more arguments to a callable expression.
+Chapter_10:  bind 	is defined in the functional header.
+Chapter_10:  callable object 	Object that can appear as the left-hand operand of the call operator. Pointers to functions, lambdas, and objects of a class that defines an overloaded function call operator are all callable objects.
+Chapter_10:  capture list 	Portion of a lambda expression that specifies which variables from the surrounding context the lambda expression may access.
+Chapter_10:  cref 	Library function that returns a copyable object that holds a reference to a const object of a type that cannot be copied.
+Chapter_10:  forward iterator 	Iterator that can read and write elements but is not required to support --.
+Chapter_10:  front_inserter 	Iterator adaptor that, given a container, generates an insert iterator that uses push_front to add elements to the beginning of that container.
+Chapter_10:  generic algorithms 	Type-independent algorithms.
+Chapter_10:  input iterator 	Iterator that can read, but not write, elements of a sequence.
+Chapter_10:  insert iterator 	Iterator adaptor that generates an iterator that uses a container operation to add elements to a given container.
+Chapter_10:  inserter 	Iterator adaptor that takes an iterator and a reference to a container and generates an insert iterator that uses insert to add elements just ahead of the element referred to by the given iterator.
+Chapter_10:  istream_iterator 	Stream iterator that reads an input stream.
+Chapter_10:  iterator categories 	Conceptual organization of iterators based on the operations that an iterator supports. Iterator categories form a hierarchy, in which the more powerful categories offer the same operations as the lesser categories. The algorithms use iterator categories to specify what operations the iterator arguments must support. As long as the iterator provides at least that level of operation, it can be used. For example, some algorithms require only input iterators. Such algorithms can be called on any iterator other than one that meets only the output iterator requirements. Algorithms that require random-access iterators can be used only on iterators that support random-access operations.
+Chapter_10:  lambda expression 	Callable unit of code. A lambda is somewhat like an unnamed, inline function. A lambda starts with a capture list, which allows the lambda to access variables in the enclosing function. Like a function, it has a (possibly empty) parameter list, a return type, and a function body. A lambda can omit the return type. If the function body is a single return statement, the return type is inferred from the type of the object that is returned. Otherwise, an omitted return type defaults to void.
+Chapter_10:  move iterator 	Iterator adaptor that generates an iterator that moves elements instead of copying them. Move iterators are covered in Chapter 13.
+Chapter_10:  ostream_iterator 	Iterator that writes to an output stream.
+Chapter_10:  output iterator 	Iterator that can write, but not necessarily read, elements.
+Chapter_10:  predicate 	Function that returns a type that can be converted to bool. Often used by the generic algorithms to test elements. Predicates used by the library are either unary (taking one argument) or binary (taking two).
+Chapter_10:  random-access iterator 	Same operations as bidirectional iterators plus the relational operators to compare iterator values, and the subscript operator and arithmetic operations on iterators, thus supporting random access to elements.
+Chapter_10:  ref 	Library function that generates a copyable object from a reference to an object of a type that cannot be copied.
+Chapter_10:  reverse iterator 	Iterator that moves backward through a sequence. These iterators exchange the meaning of ++ and --.
+Chapter_10:  stream iterator 	Iterator that can be bound to a stream.
+Chapter_11:  unary predicate 	Predicate that has one parameter. associative array Array whose elements are indexed by key rather than positionally. We say that the array maps a key to its associated value.
+Chapter_11:  associative container 	Type that holds a collection of objects that supports efficient lookup by key.
+Chapter_11:  hash 	Special library template that the unordered containers use to manage the position of their elements.
+Chapter_11:  hash function 	Function that maps values of a given type to integral (size_t) values. Equal values must map to equal integers; unequal values should map to unequal integers where possible.
+Chapter_11:  key_type 	Type defined by the associative containers that is the type for the keys used to store and retrieve values. For a map, key_type is the type used to index the map. For set, key_type and value_type are the same.
+Chapter_11:  map 	Associative container type that defines an associative array. Like vector, map is a class template. A map, however, is defined with two types: the type of the key and the type of the associated value. In a map, a given key may appear only once. Each key is associated with a particular value. Dereferencing a map iterator yields a pair that holds a const key and its associated value.
+Chapter_11:  mapped_type 	Type defined by map types that is the type of the values associated with the keys in the map.
+Chapter_11:  multimap 	Associative container similar to map except that in a multimap, a given key may appear more than once. multimap does not support subscripting.
+Chapter_11:  multiset 	Associative container type that holds keys. In a multiset, a given key may appear more than once.
+Chapter_11:  pair 	Type that holds two public data members named first and second. The pair type is a template type that takes two type parameters that are used as the types of these members.
+Chapter_11:  set 	Associative container that holds keys. In a set, a given key may appear only once.
+Chapter_11:  strict weak ordering 	Relationship among the keys used in an associative container. In a strict weak ordering, it is possible to compare any two values and determine which of the two is less than the other. If neither value is less than the other, then the two values are considered equal.
+Chapter_11:  unordered container 	Associative containers that use hashing rather than a comparison operation on keys to store and access elements. The performance of these containers depends on the quality of the hash function.
+Chapter_11:  unordered_map 	Container with elements that are key–value pairs, permits only one element per key.
+Chapter_11:  unordered_multimap 	Container with elements that are key–value pairs, allows multiple elements per key.
+Chapter_11:  unordered_multiset 	Container that stores keys, allows multiple elements per key.
+Chapter_11:  unordered_set 	Container that stores keys, permits only one element per key.
+Chapter_11:  value_type 	Type of the element stored in a container. For set and multiset, value_type and key_type are the same. For map and multimap, this type is a pair whose first member has type const key_type and whose second member has type mapped_type.
+Chapter_11:  * operator 	Dereference operator. When applied to a map, set, multimap, or multiset iterator * yields a value_type. Note, that for map and multimap, the value_type is a pair.
+Chapter_12:  [ ] operator 	Subscript operator. Defined only for nonconst obejcts of type map and unordered_map. For the map types, [] takes an index that must be a key_type (or type that can be converted to key_type). Yields a mapped_type value. allocator Library class that allocates unconstructed memory.
+Chapter_12:  dangling pointer 	A pointer that refers to memory that once had an object but no longer does. Program errors due to dangling pointers are notoriously difficult to debug.
+Chapter_12:  delete 	Frees memory allocated by new. delete p frees the object and delete [] p frees the array to which p points. p may be null or point to memory allocated by new.
+Chapter_12:  deleter 	Function passed to a smart pointer to use in place of delete when destroying the object to which the pointer is bound.
+Chapter_12:  destructor 	Special member function that cleans up an object when the object goes out of scope or is deleted.
+Chapter_12:  dynamically allocated 	Object that is allocated on the free store. Objects allocated on the free store exist until they are explicitly deleted or the program terminates.
+Chapter_12:  free store 	Memory pool available to a program to hold dynamically allocated objects.
+Chapter_12:  heap 	Synonym for free store.
+Chapter_12:  new 	Allocates memory from the free store. new T allocates and constructs an object of type T and returns a pointer to that object; if T is an array type, new returns a pointer to the first element in the array. Similarly, new [n] T allocates n objects of type T and returns a pointer to the first element in the array. By default, the allocated object is default initialized. We may also provide optional initializers.
+Chapter_12:  placement new 	Form of new that takes additional arguments passed in parentheses following the keyword new; for example, new (nothrow) int tells new that it should not throw an exception.
+Chapter_12:  reference count 	Counter that tracks how many users share a common object. Used by smart pointers to know when it is safe to delete memory to which the pointers point.
+Chapter_12:  shared_ptr 	Smart pointer that provides shared ownership: The object is deleted when the last shared_ptr pointing to that object is destroyed.
+Chapter_12:  smart pointer 	Library type that acts like a pointer but can be checked to see whether it is safe to use. The type takes care of deleting memory when appropriate.
+Chapter_12:  unique_ptr 	Smart pointer that provides single ownership: The object is deleted when the unique_ptr pointing to that object is destroyed. unique_ptrs cannot be directly copied or assigned.
+Chapter_13:  weak_ptr 	Smart pointer that points to an object managed by a shared_ptr. The shared_ptr does not count weak_ptrs when deciding whether to delete its object. copy and swap Technique for writing assignment operators by copying the right-hand operand followed by a call to swap to exchange the copy with the lefthand operand.
+Chapter_13:  copy-assignment operator 	Version of the assignment operator that takes an object of the same type as its type. Ordinarily, the copy-assignment operator has a parameter that is a reference to const and returns a reference to its object. The compiler synthesizes the copy-assignment operator if the class does not explicitly provide one.
+Chapter_13:  copy constructor 	Constructor that initializes a new object as a copy of another object of the same type. The copy constructor is applied implicitly to pass objects to or from a function by value. If we do not provide the copy constructor, the compiler synthesizes one for us.
+Chapter_13:  copy control 	Special members that control what happens when objects of class type are copied, moved, assigned, and destroyed. The compiler synthesizes appropriate definitions for these operations if the class does not otherwise declare them.
+Chapter_13:  copy initialization 	Form of initialization used when we use = to supply an initializer for a newly created object. Also used when we pass or return an object by value and when we initialize an array or an aggregate class. Copy initialization uses the copy constructor or the move constructor, depending on whether the initializer is an lvalue or an rvalue.
+Chapter_13:  deleted function 	Function that may not be used. We delete a function by specifying = delete on its declaration. A common use of deleted functions is to tell the compiler not to synthesize the copy and/or move operations for a class.
+Chapter_13:  destructor 	Special member function that cleans up an object when the object goes out of scope or is deleted. The compiler automatically destroys each data member. Members of class type are destroyed by invoking their destructor; no work is done when destroying members of built-in or compound type. In particular, the object pointed to by a pointer member is not deleted by the destructor.
+Chapter_13:  lvalue reference 	Reference that can bind to an lvalue.
+Chapter_13:  memberwise copy/assign 	How the synthesized copy and move constructors and the copy- and move-assignment operators work. Taking each nonstatic data member in turn, the synthesized copy or move constructor initializes each member by copying or moving the corresponding member from the given object; the copy- or move-assignment operators copy-assign or move-assign each member from the right-hand object to the left. Members of built-in or compound type are initialized or assigned directly. Members of class type are initialized or assigned by using the member’s corresponding copy/move constructor or copy/move-assignment operator.
+Chapter_13:  move 	Library function used to bind an rvalue reference to an lvalue. Calling move implicitly promises that we will not use the moved-from object except to destroy it or assign a new value to it.
+Chapter_13:  move-assignment operator 	Version of the assignment operator that takes an rvalue reference to its type. Typically, a move-assignment operator moves data from the right-hand operand to the left. After the assignment, it must be safe to run the destructor on the right-hand operand.
+Chapter_13:  move constructor 	Constructor that takes an rvalue reference to its type. Typically, a move constructor moves data from its parameter into the newly created object. After the move, it must be safe to run the destructor on the given argument.
+Chapter_13:  move iterator 	Iterator adaptor that generates an iterator that, when dereferenced, yields an rvalue reference.
+Chapter_13:  overloaded operator 	Function that redefines the meaning of an operator when applied to operand(s) of class type. This chapter showed how to define the assignment operator; Chapter 14 covers overloaded operators in more detail.
+Chapter_13:  reference count 	Programming technique often used in copy-control members. A reference count keeps track of how many objects share state. Constructors (other than copy/move constructors) set the reference count to 1. Each time a new copy is made the count is incremented. When an object is destroyed, the count is decremented. The assignment operator and the destructor check whether the decremented reference count has gone to zero and, if so, they destroy the object.
+Chapter_13:  reference qualifier 	Symbol used to indicate that a nonstatic member function can be called on an lvalue or an rvalue. The qualifier, & or &&, follows the parameter list or the const qualifier if there is one. A function qualified by & may be called only on lvalues; a function qualified by && may be called only on rvalues.
+Chapter_13:  rvalue reference 	Reference to an object that is about to be destroyed.
+Chapter_13:  synthesized assignment operator 	A version of the copy- or move-assignment operator created (synthesized) by the compiler for classes that do not explicitly define assignment operators. Unless it is defined as deleted, a synthesized assignment operator memberwise assigns (moves) the right-hand operand to the left.
+Chapter_13:  synthesized copy/move constructor 	A version of the copy or move constructor that is generated by the compiler for classes that do not explicitly define the corresponding constructor. Unless it is defined as deleted, a synthesized copy or move constructor memberwise initializes the new object by copying or moving members from the given object, respectively.
+Chapter_14:  synthesized destructor 	Version of the destructor created (synthesized) by the compiler for classes that do not explicitly define one. The synthesized destructor has an empty function body. call signature Represents the interface of a callable object. A call signature includes the return type and a comma-separated list of argument types enclosed in parentheses.
+Chapter_14:  class-type conversion 	Conversions to or from class types are defined by constructors and conversion operators, respectively. Nonexplicit constructors that take a single argument define a conversion from the argument type to the class type. Conversion operators define conversions from the class type to the specified type.
+Chapter_14:  conversion operator 	A member function that defines a conversions from the class type to another type. A conversion operator must be a member of the class from which it converts and is usually a const member. These operators have no return type and take no parameters. They return a value convertible to the type of the conversion operator. That is, operator int returns an int, operator string returns a string, and so on.
+Chapter_14:  explicit conversion operator 	Conversion operator preceeded by the explicit keyword. Such operators are used for implicit conversions only in conditions.
+Chapter_14:  function object 	Object of a class that defines an overloaded call operator. Function objects can be used where functions are normally expected.
+Chapter_14:  function table 	Container, often a map or a vector, that holds values that can be called.
+Chapter_14:  function template 	Library template that can represent any callable type.
+Chapter_14:  overloaded operator 	Function that redefines the meaning of one of the built-in operators. Overloaded operator functions have the name operator followed by the symbol being defined. Overloaded operators must have at least one operand of class type. Overloaded operators have the same precedence, associativity and number of operands as their built-in counterparts.
+Chapter_15:  user-defined conversion 	A synonym for class-type conversion. abstract base class Class that has one or more pure virtual functions. We cannot create objects of an abstract base-class type.
+Chapter_15:  accessible 	Base class member that can be used through a derived object. Accessibility depends on the access specifier used in derivation list of the derived class and the access level of the member in the base class. For example, a public member of a class that is inherited via public inheritance is accessible to users of the derived class. A public base class member is inacceessible if the inheritance is private.
+Chapter_15:  base class 	Class from which other classes inherit. The members of the base class become members of the derived class.
+Chapter_15:  class derivation list 	List of base classes, each of which may have an optional access level, from which a derived class inherits. If no access specifier is provided, the inheritance is public if the derived class is defined with the struct keyword, and is private if the class is defined with the class keyword.
+Chapter_15:  derived class 	Class that inherits from another class. A derived class can override the virtuals of its base and can define new members. A derived-class scope is nested in the scope of its base class(es); members of the derived class can use members of the base class directly.
+Chapter_15:  derived-to-base conversion 	Implicit conversion of a derived object to a reference to a base class, or of a pointer to a derived object to a pointer to the base type.
+Chapter_15:  direct base class 	Base class from which a derived class inherits directly. Direct base classes are specified in the derivation list of the derived class. A direct base class may itself be a derived class.
+Chapter_15:  dynamic binding 	Delaying until run time the selection of which function to run. In C++, dynamic binding refers to the runtime choice of which virtual function to run based on the underlying type of the object to which a reference or pointer is bound.
+Chapter_15:  dynamic type 	Type of an object at run time. The dynamic type of an object to which a reference refers or to which a pointer points may differ from the static type of the reference or pointer. A pointer or reference to a base-class type can refer to an to object of derived type. In such cases the static type is reference (or pointer) to base, but the dynamic type is reference (or pointer) to derived.
+Chapter_15:  indirect base class 	Base class that does not appear in the derivation list of a derived class. A class from which the direct base class inherits, directly or indirectly, is an indirect base class to the derived class.
+Chapter_15:  inheritance 	Programming technique for defining a new class (known as a derived class) in terms of an existing class (known as the base class). The derived class inherits the members of the base class.
+Chapter_15:  object-oriented programming 	Method of writing programs using data abstraction, inheritance, and dynamic binding.
+Chapter_15:  override 	Virtual function defined in a derived class that has the same parameter list as a virtual in a base class overrides the base-class definition.
+Chapter_15:  polymorphism 	As used in object-oriented programming, refers to the ability to obtain type-specific behavior based on the dynamic type of a reference or pointer.
+Chapter_15:  private inheritance 	In private inheritance, the public and protected members of the base class are private members of the derived.
+Chapter_15:  protected access specifier 	Members defined after the protected keyword may be accessed by the members and friends of a derived class. However, these members are only accessible through derived objects. protected members are not accessible to ordinary users of the class.
+Chapter_15:  protected inheritance 	In protected inheritance, the protected and public members of the base class are protected members of the derived class.
+Chapter_15:  public inheritance 	The public interface of the base class is part of the public interface of the derived class.
+Chapter_15:  pure virtual 	Virtual function declared in the class header using = 0 just before the semicolon. A pure virtual function need not be (but may be) defined. Classes with pure virtuals are abstract classes. If a derived class does not define its own version of an inherited pure virtual, then the derived class is abstract as well.
+Chapter_15:  refactoring 	Redesigning programs to collect related parts into a single abstraction, replacing the original code with uses of the new abstraction. Typically, classes are refactored to move data or function members to the highest common point in the hierarchy to avoid code duplication.
+Chapter_15:  run-time binding 	See dynamic binding.
+Chapter_15:  sliced down 	What happens when an object of derived type is used to initialize or assign an object of the base type. The derived portion of the object is “sliced down,” leaving only the base portion, which is assigned to the base.
+Chapter_15:  static type 	Type with which a variable is defined or that an expression yields. Static type is known at compile time.
+Chapter_16:  virtual function 	Member function that defines type-specific behavior. Calls to a virtual made through a reference or pointer are resolved at run time, based on the type of the object to which the reference or pointer is bound. class template Definition from which specific classes can be instantiated. Class templates are defined using the template keyword followed by a commaseparated list of one or more template parameters enclosed in < and > brackets, followed by a class definition.
+Chapter_16:  default template arguments 	A type or a value that a template uses if the user does not supply a corresponding template argument.
+Chapter_16:  explicit instantiation 	A declaration that supplies explicit arguments for all the template parameters. Used to guide the instantiation process. If the declaration is extern, the template will not be instantiated; otherwise, the template is instantiated with the specified arguments. There must be a nonextern explicit instantiation somewhere in the program for every extern template declaration.
+Chapter_16:  explicit template argument 	Template argument supplied by the user in a call to a function or when defining a template class type. Explicit template arguments are supplied inside angle brackets immediately following the template’s name.
+Chapter_16:  function parameter pack 	Parameter pack that represents zero or more function parameters.
+Chapter_16:  function template 	Definition from which specific functions can be instantiated. A function template is defined using the template keyword followed by a commaseparated list of one or more template parameters enclosed in < and > brackets, followed by a function definition.
+Chapter_16:  instantiate 	Compiler process whereby the actual template argument(s) are used to generate a specific instance of the template in which the parameter(s) are replaced by the corresponding argument(s). Functions are instantiated automatically based on the arguments used in a call. We must supply explicit template arguments whenever we use a class template.
+Chapter_16:  instantiation 	Class or function generated by the compiler from a template.
+Chapter_16:  member template 	Member function that is a template. A member template may not be virtual.
+Chapter_16:  nontype parameter 	A template parameter that represents a value. Template arguments for nontype template parameters must be constant expressions.
+Chapter_16:  pack expansion 	Process by which a parameter pack is replaced by the corresponding list of its elements.
+Chapter_16:  parameter pack 	Template or function parameter that represents zero or more parameters.
+Chapter_16:  partial specialization 	Version of a class template in which some some but not all of the template parameters are specified or in which one or more parameters are not completely specified.
+Chapter_16:  pattern 	Defines the form of each element in an expanded parameter pack.
+Chapter_16:  template argument 	Type or value used to instantiate a template parameter.
+Chapter_16:  template argument deduction 	Process by which the compiler determines which function template to instantiate. The compiler examines the types of the arguments that were specified using a template parameter. It automatically instantiates a version of the function with those types or values bound to the template parameters.
+Chapter_16:  template parameter 	Name specifed in the template parameter list that may be used inside the definition of a template. Template parameters can be type or nontype parameters. To use a class template, we must supply explicit arguments for each template parameter. The compiler uses those types or values to instantiate a version of the class in which uses of the parameter(s) are replaced by the actual argument(s). When a function template is used, the compiler deduces the template arguments from the arguments in the call and instantiates a specific function using the deduced template arguments.
+Chapter_16:  template parameter list 	List of parameters, separated by commas, to be used in the definition or declaration of a template. Each parameter may be a type or nontype parameter.
+Chapter_16:  template parameter pack 	Parameter pack that represents zero or more template parameters.
+Chapter_16:  template specialization 	Redefinition of a class template, a member of a class template, or a function template, in which some (or all) of the template parameters are specified. A template specialization may not appear until after the base template that it specializes has been declared. A template specialization must appear before any use of the template with the specialized arguments. Each template parameter in a function template must be completely specialized.
+Chapter_16:  type parameter 	Name used in a template parameter list to represent a type. Type parameters are specified following the keyword typename or class.
+Chapter_16:  type transformation 	Class templates defined by the library that transform their given template type parameter to a related type.
+Chapter_16:  variadic template 	Template that takes a varying number of template arguments. A template parameter pack is specified using an elipsis (e.g., class. .
+Chapter_17:  .	, typename. . ., or type-name. . . ). bitset Standard library class that holds a collection of bits of a size that is known at compile time, and provides operations to test and set the bits in the collection.
+Chapter_17:  cmatch 	Container of csub_match objects that provides information about the match to a regex on const char* input sequences. The first element in the container describes the overall match results. The subsequent elements describe the results for the subexpressions.
+Chapter_17:  cregex_iterator 	Like sregex_iterator except that it iterates over an array of char.
+Chapter_17:  csub_match 	Type that holds the results of a regular expression match to a const char*. Can represent the entire match or a subexpression.
+Chapter_17:  default random engine 	Type alias for the random number engine intended for normal use.
+Chapter_17:  formatted 	IO IO operations that use the types of the objects being read or written to define the actions of the operations. Formatted input operations perform whatever transformations are appropriate to the type being read, such as converting ASCII numeric strings to the indicated arithmetic type and (by default) ignoring whitespace. Formatted output routines convert types to printable character representations, pad the output, and may perform other, type-specific transformations.
+Chapter_17:  get 	Template function that returns the specified member for a given tuple. For example, get<0>(t) returns the first element from the tuple t.
+Chapter_17:  high-order 	Bits in a bitset with the largest indices.
+Chapter_17:  low-order 	Bits in a bitset with the lowest indices.
+Chapter_17:  manipulator 	A function-like object that “manipulates” a stream. Manipulators can be used as the right-hand operand to the overloaded IO operators, << and >>. Most manipulators change the internal state of the object. Such manipulators often come in pairs—one to change the state and the other to return the stream to its default state.
+Chapter_17:  random-number distribution 	Standard library type that transforms the output of a random-number engine according to its named distribution. For example, uniform_int_distribution<T> generates uniformly distributed integers of type T, normal_distribution<T> generates normally distributed numbers, and so on.
+Chapter_17:  random-number engine 	Library type that generates random unsigned numbers. Engines are intended to be used only as inputs to random-number distributions.
+Chapter_17:  random-number generator 	Combination of a random-number engine type and a distribution type.
+Chapter_17:  regex 	Class that manages a regular expression.
+Chapter_17:  regex_error 	Exception type thrown to indicate a syntactic error in a regular expression.
+Chapter_17:  regex_match 	Function that determines whether the entire input sequence matches the given regex object.
+Chapter_17:  regex_replace 	Function that uses a regex object to replace matching subexpressions in an input sequence using a given format.
+Chapter_17:  regex_search 	Function that uses a regex object to find a matching subsequence of a given input sequence.
+Chapter_17:  regular expression 	A way of describing a sequence of characters.
+Chapter_17:  seed 	Value supplied to a random-number engine that causes it to move to a new point in the sequence of number that it generates.
+Chapter_17:  smatch 	Container of ssub_match objects that provides information about the match to a regex on string input sequences. The first element in the container describes the overall match results. The subsequent elements describe the results for the subexpressions.
+Chapter_17:  sregex_iterator 	Iterator that iterates over a string using a given regex object to find matches in the given string. The constructor positions the iterator on the first match by calling regex_search. Incrementing the iterator calls regex_search starting just after the current match in the given string. Dereferencing the iterator returns an smatch object describing the current match.
+Chapter_17:  ssub_match 	Type that holds results of a regular expression match to a string. Can represent the entire match or a subexpression.
+Chapter_17:  subexpression 	Parenthesized component of a regular expression pattern.
+Chapter_17:  tuple 	Template that generates types that hold unnamed members of specified types. There is no fixed limit on the number of members a tuple can be defined to have.
+Chapter_18:  unformatted 	IO Operations that treat the stream as an undifferentiated byte stream. Unformatted operations place more of the burden for managing the IO on the user. catch-all A catch clause in which the exception declaration is (...). A catchall clause catches an exception of any type. It is typically used to catch an exception that is detected locally in order to do local cleanup. The exception is then rethrown to another part of the program to deal with the underlying cause of the problem.
+Chapter_18:  catch clause 	Part of the program that handles an exception. A catch clause consists of the keyword catch followed by an exception declaration and a block of statements. The code inside a catch does whatever is necessary to handle an exception of the type defined in its exception declaration.
+Chapter_18:  constructor order 	Under nonvirtual inheritance, base classes are constructed in the order in which they are named in the class derivation list. Under virtual inheritance, the virtual base class(es) are constructed before any other bases. They are constructed in the order in which they appear in the derivation list of the derived type. Only the most derived type may initialize a virtual base; constructor initializers for that base that appear in the intermediate base classes are ignored.
+Chapter_18:  exception declaration catch clause declaration that specifies the type of exception that the catch can handle. 	The declaration acts like a parameter list, whose single parameter is initialized by the exception object. If the exception specifier is a nonreference type, then the exception object is copied to the catch.
+Chapter_18:  exception handling 	Language-level support for managing run-time anomalies. One independently developed section of code can detect and “raise” an exception that another independently developed part of the program can “handle.” The error-detecting part of the program throws an exception; the error-handling part handles the exception in a catch clause of a try block.
+Chapter_18:  exception object 	Object used to communicate between the throw and catch sides of an exception. The object is created at the point of the throw and is a copy of the thrown expression. The exception object exists until the last handler for the exception completes. The type of the object is the static type of the thrown expression.
+Chapter_18:  file static 	Name local to a file that is declared with the static keyword. In C and pre-Standard versions of C++, file statics were used to declare objects that could be used in a single file only. File statics are deprecated in C++, having been superseded by the use of unnamed namespaces.
+Chapter_18:  function try block 	Used to catch exceptions from a constructor initializer. The keyword try appears before the colon that starts the constructor initializer list (or before the open curly of the constructor body if the initizlier list is empty) and closes with one or more catch clauses that appear after the close curly of the constructor body.
+Chapter_18:  global namespace 	The (implicit) namespace in each program that holds all global definitions.
+Chapter_18:  handler 	Synonym for a catch clause.
+Chapter_18:  inline namespace 	Members of a namespace designated as inline can be used as if they were members of an enclosing namespace.
+Chapter_18:  multiple inheritance 	Class with more than one direct base class. The derived class inherits the members of all its base classes. A separate access specifier may be provided for each base class.
+Chapter_18:  namespace 	Mechanism for gathering all the names defined by a library or other collection of programs into a single scope. Unlike other scopes in C++, a namespace scope may be defined in several parts. The namepsace may be opened and closed and reopened again in disparate parts of the program.
+Chapter_18:  namespace alias 	Mechanism for defining a synonym for a given namespace: namespace N1 = N; defines N1 as another name for the namespace named N. A namespace can have multiple aliases; the namespace name or any of its aliases may be used interchangeably.
+Chapter_18:  namespace pollution 	Occurs when all the names of classes and functions are placed in the global namespace. Large programs that use code written by multiple independent parties often encounter collisions among names if these names are global.
+Chapter_18:  noexcept operator 	Operator that returns a bool indicating whether a given expression might throw an exception. The expression is unevaluated. The result is a constant expression. Its value is true if the expression does not contain a throw and calls only functions designated as nonthrowing; otherwise the result is false.
+Chapter_18:  noexcept specification 	Keyword used to indicate whether a function throws. When noexcept follows a function’s parameter list, it may be optionally followed by a parenthesized constant expression that must be convertible to bool. If the expression is omitted, or if it is true, the function throws no exceptions. An expression that is false or a function that has no exception specification may throw any exception.
+Chapter_18:  nonthrowing specification 	An exception specification that promises that a function won’t throw. If a nonthrowing functions does throw, terminate is called. Nonthrowing specifiers are noexcept without an argument or with an argument that evaluates as true and throw().
+Chapter_18:  raise 	Often used as a synonym for throw. C++ programmers speak of “throwing” or “raising” an exception interchangably.
+Chapter_18:  rethrow 	A throw that does not specify an expression. A rethrow is valid only from inside a catch clause, or in a function called directly or indirectly from a catch. Its effect is to rethrow the exception object that it received.
+Chapter_18:  stack unwinding 	The process whereby the functions are exited in the search for a catch. Local objects constructed before the exception are destroyed before entering the corresponding catch.
+Chapter_18:  terminate 	Library function that is called if an exception is not caught or if an exception occurs while a handler is in process. terminate ends the program.
+Chapter_18:  throw e 	Expression that interrupts the current execution path. Each throw transfers control to the nearest enclosing catch clause that can handle the type of exception that is thrown. The expression e is copied into the exception object.
+Chapter_18:  try block 	Block of statements enclosed by the keyword try and one or more catch clauses. If the code inside the try block raises an exception and one of the catch clauses matches the type of the exception, then the exception is handled by that catch. Otherwise, the exception is passed out of the try to a catch further up the call chain.
+Chapter_18:  unnamed namespace 	Namespace that is defined without a name. Names defined in an unnamed namespace may be accessed directly without use of the scope operator. Each file has its own unique unnamed namespace. Names in an unnamed namespace are not visible outside that file.
+Chapter_18:  using declaration 	Mechanism to inject a single name from a namespace into the current scope: using std::cout; makes the name cout from the namespace std available in the current scope. The name cout can subseuquently be used without the std:: qualifier.
+Chapter_18:  using directive 	Declaration of the form using NS; makes all the names in the namespace named NS available in the nearest scope containing both the using directive and the namespace itself.
+Chapter_18:  virtual base class 	Base class that specifies virtual in its own derivation list. A virtual base part occurs only once in a derived object even if the same class appears as a virtual base more than once in the hierarchy. In nonvirtual inheritance a constructor may initialize only its direct base class(es). When a class is inherited virtually, that class is initialized by the most derived class, which therefore should include an initializer for all of its virtual parent(s).
+Chapter_18:  virtual inheritance 	Form of multiple inheritance in which derived classes share a single copy of a base that is included in the hierarchy more than once.
+Chapter_19:  :: operator 	Scope operator. Used to access names from a namespace or a class. anonymous union Unnamed union that is not used to define an object. Members of an anonymous union become members of the surrounding scope. These unions may not have member functions and may not have private or protected members.
+Chapter_19:  bit-field 	Class member with a integral type that specifies the number of bits to allocate to the member. Bit-fields defined in consecutive order in the class are, if possible, compacted into a common integral value.
+Chapter_19:  discriminant 	Programming technique that uses an object to determine which actual type is held in a union at any given time.
+Chapter_19:  dynamic_cast 	Operator that performs a checked cast from a base type to a derived type. When the base type has at least one virtual function, the operator checks the dynamic type of the object to which the reference or pointer is bound. If the object type is the same as the type of the cast (or a type derived from that type), then the cast is done. Otherwise, a zero pointer is returned for a pointer cast, or an exception is thrown for a cast to a reference type.
+Chapter_19:  enumeration 	Type that groups a set of named integral constants.
+Chapter_19:  enumerator 	Member of an enumeration. Enumerators are const and may be used where integral constant expressions are required.
+Chapter_19:  free 	Low-level memory deallocation function defined in cstdlib. free may be used only to free memory allocated by malloc.
+Chapter_19:  linkage directive 	Mechanism used to allow functions written in a different language to be called from a C++ program. All compilers must support calling C and C++ functions. It is compiler dependent whether any other languages are supported.
+Chapter_19:  local class 	Class defined inside a function. A local class is visible only inside the function in which it is defined. All members of the class must be defined inside the class body. There can be no static members of a local class. Local class members may not access the nonstatic variables defined in the enclosing function. They may use type names, static variables, or enumerators defined in the enclosing function.
+Chapter_19:  malloc 	Low-level memory allocation function defined in cstdlib. Memory allocated by malloc must be freed by free.
+Chapter_19:  mem_fn 	Library class template that generates a callable object from a given pointer to member function.
+Chapter_19:  nested class 	Class defined inside another class. A nested class is defined inside its enclosing scope: Nested-class names must be unique within the class scope in which they are defined but can be reused in scopes outside the enclosing class. Access to the nested class outside the enclosing class requires use of the scope operator to specify the scope(s) in which the class is nested.
+Chapter_19:  nested type 	Synonym for nested class.
+Chapter_19:  nonportable 	Features that are inherently machine specific and may require change when a program is ported to another machine or compiler.
+Chapter_19:  operator delete 	Library function that frees untyped, unconstructed memory allocated by operator new. The library operator delete[] frees memory used to hold an array that was allocated by operator new[].
+Chapter_19:  operator new 	Library function that allocates untyped, unconstructed memory of a given size. The library function operator new[] allocates raw memory for arrays. These library functions provide a more primitive allocation mechanism than the library allocator class. Modern C++ programs should use the allocator classes rather than these library functions.
+Chapter_19:  placement new expression 	Form of new that constructs its object in specified memory. It does no allocation; instead, it takes an argument that specifies where the object should be constructed. It is a lower-level analog of the behavior provided by the construct member of the allocator class.
+Chapter_19:  pointer to member 	Pointer that encapsulates the class type as well as the member type to which the pointer points. The definition of a pointer to member must specify the class name as well as the type of the member(s) to which the pointer may point: T C::*pmem = &C::member; This statement defines pmem as a pointer that can point to members of the class named C that have type T and initializes pmem to point to the member in C named member. To use the pointer, we must supply an object or pointer to type C: classobj.*pmem; classptr->*pmem; fetches member from the object classobj of the object pointed to by classptr.
+Chapter_19:  run-time type identification 	Language and library facilities that allow the dynamic type of a reference or pointer to be obtained at run time. The RTTI operators, typeid and dynamic_cast, provide the dynamic type only for references or pointers to class types with virtual functions. When applied to other types, the type returned is the static type of the reference or pointer.
+Chapter_19:  scoped enumeration 	New-style enumeration in which the enumerator are not accessible directly in the surrounding scope.
+Chapter_19:  typeid operator 	Unary operator that returns a reference to an object of the library type named type_info that describes the type of the given expression. When the expression is an object of a type that has virtual functions, then the dynamic type of the expression is returned; such expressions are evaluated at run time. If the type is a reference, pointer, or other type that does not define virtual functions, then the type returned is the static type of the reference, pointer, or object; such expressions are not evaluated.
+Chapter_19:  type_info 	Library type returned by the typeid operator. The type_info class is inherently machine dependent, but must provide a small set of operations, including a name function that returns a character string representing the type’s name. type_info objects may not be copied, moved, or assigned.
+Chapter_19:  union 	Classlike aggregate type that may define multiple data members, only one of which can have a value at any one point. Unions may have member functions, including constructors and destructors. A union may not serve as a base class. Under the new standard, unions can have members that are class types that define their own copy-control members. Such unions obtain deleted copy control if they do not themselves define the corresponding copy-control functions.
+Chapter_19:  unscoped enumeration 	Enumeration in which the enumerators are accessible in the surrounding scope.
