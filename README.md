@@ -15,7 +15,7 @@ Change the following ruleset class for your chosen pdf. No guarentees this will 
 Designed for soley text input.
 <br>
 <br>
-Used by:
+To use:
 <br>
 g++ main.cpp flash_card.cpp parse_text_file.cpp 
 ./a.out *file.pdf*
